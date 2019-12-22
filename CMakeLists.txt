@@ -3,4 +3,4 @@ project(Warcraft)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Warcraft main.cpp Warrior.cpp Warrior.h Weapon.cpp Weapon.h)
+add_executable(Warcraft main.cpp Warrior.cpp Warrior.h Weapon.cpp Weapon.h Headquarter.cpp Headquarter.h Constants.h)

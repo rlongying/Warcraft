@@ -7,9 +7,9 @@
 
 Weapon* Weapon::makeWeapon(int id) {
     switch (id) {
-        case 1: return new Sword();
-        case 2: return new Bomb();
-        case 3: return new Arrow();
+        case 0: return new Sword();
+        case 1: return new Bomb();
+        case 2: return new Arrow();
         default: throw std::invalid_argument("invalid id of weapon");
     }
 }

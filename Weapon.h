@@ -19,7 +19,10 @@ public:
     static Weapon *makeWeapon(int id);
 
     virtual string toString() const = 0;
-    virtual ~Weapon() = 0;
+
+    // virtual destructor always needs a body
+    // because it'll be called after the destructor of derived classes are called
+    virtual ~Weapon() = default;
 
     friend ostream &operator<<(ostream &os, const Weapon &weapon);
 };

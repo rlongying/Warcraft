@@ -4,22 +4,37 @@
 
 #include "Warrior.h"
 
-ostream &operator<<(ostream &os, const Warrior *w) {
-    return <#initializer#>;
+const string Warrior::DRAGON = "dragon";
+const string Warrior::NINJA = "ninja";
+const string Warrior::ICEMAN = "iceman";
+const string Warrior::LION = "lion";
+const string Warrior::WOLF = "wolf";
+
+ostream &operator<<(ostream &os, const Warrior &w) {
+    os << w.getType() << " " << w.id << " born with strength " << w.strength;
+    return os;
 }
 
-string Dragon::toString() const {
-    return std::string();
+string Dragon::getType() const {
+
+    return DRAGON;
 }
 
-string Ninja::toString() const {
-    return std::string();
+string Ninja::getType() const {
+
+    return NINJA;
 }
 
-string Iceman::toString() const {
-    return std::string();
+string Iceman::getType() const {
+
+    return ICEMAN;
 }
 
-string Lion::toString() const {
-    return std::string();
+string Lion::getType() const {
+
+    return LION;
+}
+
+string Wolf::getType() const {
+    return WOLF;
 }
